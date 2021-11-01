@@ -1,0 +1,36 @@
+.footer {
+  padding: 11.25rem 0;
+}
+
+.title-footer {
+  font-size: 72px;
+  @media (max-width: 991px) {
+    font-size: 48px;
+  }
+  padding-bottom: 2rem;
+}
+
+.button-footer {
+  background-color: $color-primario;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  @media (max-width: 991px) {
+    font-size: 1rem;
+  }
+}
+
+.redes {
+  li {
+    a {
+      padding: 0 1.5rem;
+      font-size: 1.25rem;
+      transition: color 0.15s ease-in-out;
+      &:hover {
+        color: $color-primario;
+      }
+      @media (max-width: 991px) {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

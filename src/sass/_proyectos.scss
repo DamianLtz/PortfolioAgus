@@ -1,0 +1,35 @@
+.container-proyectos {
+  padding: 96px 0;
+  .col-lg-12 {
+    h2 {
+      font-size: 8rem;
+      padding: 1rem 0;
+    }
+  }
+  .col-lg-6 {
+    h3 {
+      font-size: 5rem;
+      padding: 1rem 0;
+    }
+  }
+  h3 {
+    font-size: 5rem;
+    padding: 1rem 0;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.button-secondary-proyecto {
+  background-color: $color-gris-oscuro;
+  padding: 0.5rem;
+  font-size: 14px;
+  margin: 2.5rem 0.5rem;
+}
+
+.button-view-proyect {
+  background-color: $color-primario;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}

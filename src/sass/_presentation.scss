@@ -1,0 +1,29 @@
+.container-presentation {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  grid-template-rows: 1fr;
+}
+
+.title-presentation {
+  font-weight: 400;
+  line-height: 88px;
+  font-size: calc(1rem + 5vw);
+  @media (min-width: 991px) {
+    font-size: 72px;
+  }
+  @media (max-width: 991px) {
+    line-height: initial;
+  }
+}
+
+.position-img {
+  z-index: -1;
+  top: -50%;
+  right: -4%;
+  transition: all 0.25s ease-in-out;
+  @media (min-width: 1200px) {
+    top: -50%;
+    right: -7%;
+  }
+}
