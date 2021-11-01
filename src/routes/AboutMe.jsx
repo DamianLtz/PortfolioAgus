@@ -9,8 +9,8 @@ import Flecha from "../img/main/Flecha.svg";
 const AboutMe = () => {
   return (
     <main>
-      <div className="position-relative">
-        <img src={BgAboutMe} alt="" className="img-fluid w-100" />
+      <div className="position-relative vh-lg-100">
+        <img src={BgAboutMe} alt="" className="img-fluid w-100 img-aboutMe" />
         <Link className="background-flecha position-fixed" to="/">
           <img src={FlechaIzq} alt="" />
         </Link>
@@ -19,7 +19,7 @@ const AboutMe = () => {
         </h1>
         <p className="position-absolute">Mendoza Arg.</p>
       </div>
-      <div className="container mt-5">
+      <div className="container container-aboutMe">
         <div className="row">
           <div className="col-lg-5">
             <h2 className="aboutme-titulo">Hello!</h2>
