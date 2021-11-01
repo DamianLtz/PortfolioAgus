@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import Button from "./Button";
-
+/* agustinfrancoietta@gmail.com */
 const Footer = () => {
   return (
     <footer id="contactMe">
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="row footer">
           <div className="col-lg-6 col-md-6 col-sm-12">
             <h2 className="title-footer text-light">Let’s work together</h2>
-            <Button className="button-footer" content="agustinfrancoietta@gmail.com"/>
+            <Button className="button-footer" content="agustinfrancoietta@gmail.com" />
           </div>
         </div>
         <div className="row py-5">

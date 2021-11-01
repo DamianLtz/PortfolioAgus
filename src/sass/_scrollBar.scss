@@ -1,0 +1,15 @@
+body {
+    transition: color 0.15s ease-in-out;
+    &::-webkit-scrollbar {
+      background: $color-negro;
+      width: 14px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color-primario;
+      border-radius: 8px;
+      transition: all 0.15s ease-in-out;
+      &:hover {
+        background: $color-primario-dark;
+      }
+    }
+  }

@@ -1,26 +1,34 @@
-.background-flecha {
-  display: inline-block;
+.button-flecha {
+  display: flex;
+  align-items: center;
   background-color: #ffffff;
-  border-radius: 50%;
   padding: 0.75rem;
   top: 32px;
   left: 96px;
-  transition: background-color 0.15s ease-in-out;
+  border-radius: 50%;
+  width: 50px;
+  transition: background-color 0.75s, color 0.75s ease;
+  color: $color-negro;
   &:hover {
     background-color: $color-primario;
-    color: #ffffff;
+    color: $color-blanco;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    width: 200px;
+    border-radius: 40px;
+    &::after {
+      content: "Back To Home";
+      padding-left: 0.5rem;
+      border-radius: 40px;
+    }
   }
   @media (max-width: 991px) {
     left: 32px;
   }
-  img {
-    width: 32px;
-    height: 32px;
-  }
 }
 
-.img-aboutMe{
-    object-fit: cover;
+.img-aboutMe {
+  object-fit: cover;
 }
 
 .aboutMe {
@@ -36,8 +44,8 @@
   right: 32px;
 }
 
-.container-aboutMe{
-    padding-top: 128px;
+.container-aboutMe {
+  padding-top: 128px;
 }
 
 .aboutme-titulo {
@@ -54,10 +62,13 @@
   font-size: 18px;
   padding: 1rem 1.5rem;
   background-color: $color-primario;
+  &:hover {
+    color: $color-blanco;
+  }
 }
 
-.vh-lg-100{
-    @media (min-width: 991px) {
-        height: 100vh;
-    }
+.vh-lg-100 {
+  @media (min-width: 991px) {
+    height: 100vh;
+  }
 }

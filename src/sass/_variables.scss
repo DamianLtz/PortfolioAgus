@@ -4,13 +4,24 @@ $font-proyect: "DM Sans", sans-serif;
 
 $color-negro: #151517;
 $color-blanco: #ffffff;
-$color-primario: #6032BD;
-$color-gris-oscuro: #21211F;
+$color-primario: #6032bd;
+$color-primario-dark: #451e94;
+$color-gris-oscuro: #21211f;
 
-h1,h2,h3,h4,h5,h6,a,label,p,input,button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label,
+p,
+input,
+button {
   font-family: $font-proyect;
   margin: 0;
-  color: $color-blanco
+  color: $color-blanco;
 }
 
 a {
@@ -18,11 +29,19 @@ a {
   color: $color-blanco;
 }
 
-li{
+li {
   list-style: none;
 }
 
-ul,ol,dl{
+ul,
+ol,
+dl {
   padding: 0;
   margin: 0;
+}
+
+.vh-100-mobile {
+  @media (max-width: 991px) {
+    height: 100vh;
+  }
 }

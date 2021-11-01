@@ -9,7 +9,9 @@ import TercerProyecto from "./TercerProyecto";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <main className="container">
         <Presentation />
         <ProyectoDestacado />
