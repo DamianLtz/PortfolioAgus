@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/PortfolioAgus/static/css/main.f8328ac6.chunk.css",
-    "main.js": "/PortfolioAgus/static/js/main.a65f0043.chunk.js",
-    "main.js.map": "/PortfolioAgus/static/js/main.a65f0043.chunk.js.map",
+    "main.css": "/PortfolioAgus/static/css/main.e0daaa05.chunk.css",
+    "main.js": "/PortfolioAgus/static/js/main.8a559c57.chunk.js",
+    "main.js.map": "/PortfolioAgus/static/js/main.8a559c57.chunk.js.map",
     "runtime-main.js": "/PortfolioAgus/static/js/runtime-main.eeef056e.js",
     "runtime-main.js.map": "/PortfolioAgus/static/js/runtime-main.eeef056e.js.map",
     "static/js/2.10a86cc1.chunk.js": "/PortfolioAgus/static/js/2.10a86cc1.chunk.js",
     "static/js/2.10a86cc1.chunk.js.map": "/PortfolioAgus/static/js/2.10a86cc1.chunk.js.map",
     "index.html": "/PortfolioAgus/index.html",
-    "static/css/main.f8328ac6.chunk.css.map": "/PortfolioAgus/static/css/main.f8328ac6.chunk.css.map",
+    "static/css/main.e0daaa05.chunk.css.map": "/PortfolioAgus/static/css/main.e0daaa05.chunk.css.map",
     "static/js/2.10a86cc1.chunk.js.LICENSE.txt": "/PortfolioAgus/static/js/2.10a86cc1.chunk.js.LICENSE.txt",
     "static/media/ArrowDown.96d5dc99.svg": "/PortfolioAgus/static/media/ArrowDown.96d5dc99.svg",
     "static/media/ArrowLeft.a52e952b.svg": "/PortfolioAgus/static/media/ArrowLeft.a52e952b.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.eeef056e.js",
     "static/js/2.10a86cc1.chunk.js",
-    "static/css/main.f8328ac6.chunk.css",
-    "static/js/main.a65f0043.chunk.js"
+    "static/css/main.e0daaa05.chunk.css",
+    "static/js/main.8a559c57.chunk.js"
   ]
 }
