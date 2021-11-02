@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/PortfolioAgus/static/css/main.fcb39c09.chunk.css",
-    "main.js": "/PortfolioAgus/static/js/main.3bf230b1.chunk.js",
-    "main.js.map": "/PortfolioAgus/static/js/main.3bf230b1.chunk.js.map",
+    "main.css": "/PortfolioAgus/static/css/main.26193f27.chunk.css",
+    "main.js": "/PortfolioAgus/static/js/main.a2d43897.chunk.js",
+    "main.js.map": "/PortfolioAgus/static/js/main.a2d43897.chunk.js.map",
     "runtime-main.js": "/PortfolioAgus/static/js/runtime-main.eeef056e.js",
     "runtime-main.js.map": "/PortfolioAgus/static/js/runtime-main.eeef056e.js.map",
-    "static/js/2.4992c881.chunk.js": "/PortfolioAgus/static/js/2.4992c881.chunk.js",
-    "static/js/2.4992c881.chunk.js.map": "/PortfolioAgus/static/js/2.4992c881.chunk.js.map",
+    "static/js/2.91e000c0.chunk.js": "/PortfolioAgus/static/js/2.91e000c0.chunk.js",
+    "static/js/2.91e000c0.chunk.js.map": "/PortfolioAgus/static/js/2.91e000c0.chunk.js.map",
     "index.html": "/PortfolioAgus/index.html",
-    "static/css/main.fcb39c09.chunk.css.map": "/PortfolioAgus/static/css/main.fcb39c09.chunk.css.map",
-    "static/js/2.4992c881.chunk.js.LICENSE.txt": "/PortfolioAgus/static/js/2.4992c881.chunk.js.LICENSE.txt",
+    "static/css/main.26193f27.chunk.css.map": "/PortfolioAgus/static/css/main.26193f27.chunk.css.map",
+    "static/js/2.91e000c0.chunk.js.LICENSE.txt": "/PortfolioAgus/static/js/2.91e000c0.chunk.js.LICENSE.txt",
     "static/media/ArrowDown.96d5dc99.svg": "/PortfolioAgus/static/media/ArrowDown.96d5dc99.svg",
-    "static/media/ArrowLeft.a52e952b.svg": "/PortfolioAgus/static/media/ArrowLeft.a52e952b.svg",
     "static/media/BlancoyNegro.488fbaea.png": "/PortfolioAgus/static/media/BlancoyNegro.488fbaea.png",
     "static/media/Flecha.7d14ce09.svg": "/PortfolioAgus/static/media/Flecha.7d14ce09.svg",
-    "static/media/contactMeLogo.230b376d.svg": "/PortfolioAgus/static/media/contactMeLogo.230b376d.svg",
+    "static/media/contactMeLogo.0c5cf90c.svg": "/PortfolioAgus/static/media/contactMeLogo.0c5cf90c.svg",
     "static/media/moon.9aa77f92.png": "/PortfolioAgus/static/media/moon.9aa77f92.png",
     "static/media/proyectoDos.836fbad1.png": "/PortfolioAgus/static/media/proyectoDos.836fbad1.png",
     "static/media/proyectoTres.62e6d3fe.png": "/PortfolioAgus/static/media/proyectoTres.62e6d3fe.png",
@@ -22,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eeef056e.js",
-    "static/js/2.4992c881.chunk.js",
-    "static/css/main.fcb39c09.chunk.css",
-    "static/js/main.3bf230b1.chunk.js"
+    "static/js/2.91e000c0.chunk.js",
+    "static/css/main.26193f27.chunk.css",
+    "static/js/main.a2d43897.chunk.js"
   ]
 }
