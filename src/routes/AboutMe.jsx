@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import FlechaIzq from "../img/AboutMe/ArrowLeft.svg";
 import BgAboutMe from "../img/AboutMe/BlancoyNegro.png";
 import Button from "../components/Button";
 import Flecha from "../img/main/Flecha.svg";
@@ -11,10 +10,7 @@ const AboutMe = () => {
     <main>
       <div className="position-relative vh-lg-100">
         <img src={BgAboutMe} alt="" className="img-fluid w-100 img-aboutMe" />
-        <Link
-          className="button-flecha position-fixed"
-          to="/"
-        >
+        <Link className="button-flecha position-fixed" to="/">
           <svg
             width="24"
             height="24"

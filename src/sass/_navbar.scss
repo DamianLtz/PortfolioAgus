@@ -1,8 +1,4 @@
-body {
-  background-color: $color-negro;
-}
-
-.navbar-collapse{
+.navbar-collapse {
   flex-grow: 0;
 }
 
@@ -23,5 +19,16 @@ body {
     span {
       color: $color-primario;
     }
+  }
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+}
+
+.contact-me {
+  border-radius: 40px;
+  &:hover {
+    background-color: $color-primario;
   }
 }

@@ -37,7 +37,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="#contactMe">
+                <a className="d-flex align-items-center nav-link text-light contact-me py-2 px-4" href="#contactMe">
                   Contact me
                   <span className="ms-2">
                     <img src={ContactMeLogo} alt="" />

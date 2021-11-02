@@ -7,6 +7,7 @@ $color-blanco: #ffffff;
 $color-primario: #6032bd;
 $color-primario-dark: #451e94;
 $color-gris-oscuro: #21211f;
+$color-gris-oscuro-alt: #212222;
 
 h1,
 h2,
@@ -25,6 +26,7 @@ button {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: $color-blanco;
 }
@@ -38,6 +40,10 @@ ol,
 dl {
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: $color-negro;
 }
 
 .vh-100-mobile {

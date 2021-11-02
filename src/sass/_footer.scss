@@ -24,9 +24,22 @@
     a {
       padding: 0 1.5rem;
       font-size: 1.25rem;
-      transition: color 0.15s ease-in-out;
+      &::after {
+        content: "";
+        display: block;
+        margin: 0.5rem auto;
+        height: 6px;
+        width: 40px;
+        opacity: 0;
+        background: $color-primario;
+        border-radius: 4px;
+        transition: all 0.25s linear;
+      }
       &:hover {
-        color: $color-primario;
+        color: $color-blanco;
+      }
+      &:hover::after {
+        opacity: 1;
       }
       @media (max-width: 991px) {
         padding: 0 1rem;
