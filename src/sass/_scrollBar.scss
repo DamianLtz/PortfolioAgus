@@ -2,7 +2,7 @@ body {
     transition: color 0.15s ease-in-out;
     &::-webkit-scrollbar {
       background: $color-negro;
-      width: 14px;
+      width: 0.75rem;
     }
     &::-webkit-scrollbar-thumb {
       background: $color-gris-oscuro-alt;

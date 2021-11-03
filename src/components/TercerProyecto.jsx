@@ -10,7 +10,6 @@ import img from "../img/main/proyectoTres.png";
 const TercerProyecto = () => {
   useEffect(() => {
     ScrollReveal().reveal("#tercerProyecto", {
-      reset: true,
       delay: 250,
       distance: "50px",
       duration: 850,

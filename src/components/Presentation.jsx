@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Moon from "../img/main/moon.png";
 import ArrowDown from "../img/main/ArrowDown.svg";
+import ScrollReveal from "scrollreveal";
 
 const Presentation = () => {
+  useEffect(() => {
+    ScrollReveal().reveal(".moon", {
+      delay: 1000,
+      duration: 1700,
+    });
+    ScrollReveal().reveal(".title-presentation", {
+      delay: 250,
+      distance: "50px",
+      duration: 2500,
+    });
+  });
   return (
     <div className="container-presentation">
       <div className="row">
@@ -13,7 +25,7 @@ const Presentation = () => {
             perfect and simple things.
           </h1>
           <div className="position-absolute position-img d-none d-lg-block">
-            <img src={Moon} alt="" className="img-fluid" />
+            <img src={Moon} alt="" className="img-fluid moon" />
           </div>
         </div>
       </div>
