@@ -15,13 +15,13 @@ function App() {
     <Router>
       <ScrollToTop />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/" basename="/portfolio-agus">
           <Home />
         </Route>
         <Route exact path="/AboutMe">
           <AboutMe />
         </Route>
-        <Redirect to="/" />
+        <Redirect to="/" basename="/portfolio-agus"/>
       </Switch>
       <Footer />
     </Router>
