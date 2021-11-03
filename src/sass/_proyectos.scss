@@ -1,13 +1,13 @@
 .container-proyectos {
-  padding: 6rem 0;
-  @media (max-width: 991px) {
-    padding: 3rem 0;
+  padding: 3rem 0;
+  @media (min-width: 991px) {
+    padding: 6rem 0;
   }
   .col-lg-12 {
     img {
-      top: 10%;
-      @media (max-width: 991px) {
-        top: 7%;
+      top: 7%;
+      @media (min-width: 991px) {
+        top: 10%;
       }
     }
     h2 {

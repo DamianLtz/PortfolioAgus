@@ -7,13 +7,12 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 
 function App() {
-  console.log(useLocation());
   const location = useLocation();
   return (
     <>
       <ScrollToTop />
       <TransitionGroup>
-        <CSSTransition timeout={500} classNames="fade" key={location.key}>
+        <CSSTransition timeout={300} classNames="fade" key={location.key} unmountOnExit>
           <Switch>
             <Route exact path="/">
               <Home />

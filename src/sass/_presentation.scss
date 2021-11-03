@@ -4,22 +4,24 @@
   height: 100vh;
   grid-template-rows: 1fr;
   .row {
-    margin-top: 6rem;
-    @media (max-width: 991px) {
-      margin-top: 4.5rem;
+    margin-top: 4.5rem;
+    @media (min-width: 991px) {
+      margin-top: 6rem;
     }
   }
 }
 
 .title-presentation {
   font-weight: 400;
-  line-height: 88px;
+  line-height: initial;
   font-size: calc(1rem + 5vw);
   @media (min-width: 991px) {
     font-size: 72px;
+    line-height: 88px;
   }
-  @media (max-width: 991px) {
-    line-height: initial;
+  @media (min-width: 1400px) {
+    line-height: 120px;
+    font-size: 6rem;
   }
 }
 
@@ -33,5 +35,9 @@
   @media (min-width: 1200px) {
     top: -50%;
     right: 16%;
+  }
+  @media (min-width: 1400px) {
+    top: -25%;
+    right: 9%;
   }
 }
