@@ -4,20 +4,8 @@ import { Link } from "react-router-dom";
 import BgAboutMe from "../img/AboutMe/BlancoyNegro.png";
 import Button from "../components/Button";
 import Flecha from "../img/main/Flecha.svg";
-import FlechaGoTo from "../img/main/goTo.svg";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const AboutMe = () => {
- /*  const [buttonFlecha, setbuttonFlecha] = useState(Flecha);
-
-  function updateButton() {
-    setbuttonFlecha(<img src={FlechaGoTo} alt="" className="ms-2" />);
-  } */
-
-  useEffect(() => {
-    return () => {};
-  }, []);
   return (
     <main>
       <div className="position-relative vh-lg-100">
@@ -71,13 +59,12 @@ const AboutMe = () => {
               </p>
             </div>
             <Button
-              className="button-aboutMe"
+              className="button-aboutMe button-animate"
               content="Full profile on LinkedIn"
               href="#/"
-              Flecha={Flecha}
-              /* onMouseOver={updateButton}
-              Flecha={buttonFlecha} */
-            ></Button>
+            >
+              <img src={Flecha} alt="" className="ms-2 flechita" />
+            </Button>
           </div>
         </div>
       </div>

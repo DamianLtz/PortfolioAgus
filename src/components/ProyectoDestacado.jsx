@@ -6,9 +6,6 @@ import ScrollReveal from "scrollreveal";
 
 import ProyectoUno from "../img/main/proyectoUno.png";
 import Flecha from "../img/main/Flecha.svg";
-/* import FlechaGoTo from "../img/main/goTo.svg"; */
-
-/* <img src={FlechaGoTo} alt="" className="ms-2" />; */
 
 const Proyectos = () => {
   useEffect(() => {
@@ -18,8 +15,6 @@ const Proyectos = () => {
       duration: 650,
     });
   });
-
-  /* <img src={Flecha} alt="" className="ms-2" /> */
   return (
     <div className="row container-proyectos" id="proyectos">
       <div className="col-lg-12 d-flex flex-column align-items-center">
@@ -40,7 +35,7 @@ const Proyectos = () => {
           <Tag content="Visual Design" />
         </div>
         <ButtonLink
-          className="button-view-proyect"
+          className="button-view-proyect button-animate"
           content="View proyect"
           id="goToUno"
           href="#/"

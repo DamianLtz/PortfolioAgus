@@ -2,29 +2,31 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import AboutMe from "./routes/AboutMe";
 import ScrollToTop from "./components/ScrollToTop";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 
 function App() {
+  console.log(useLocation());
+  const location = useLocation();
   return (
-    <Router>
+    <>
       <ScrollToTop />
-      <Switch>
-        <Route exact path="/" basename="/portfolio-agus">
-          <Home />
-        </Route>
-        <Route exact path="/AboutMe">
-          <AboutMe />
-        </Route>
-        <Redirect to="/" basename="/portfolio-agus"/>
-      </Switch>
+      <TransitionGroup>
+        <CSSTransition timeout={500} classNames="fade" key={location.key}>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/AboutMe">
+              <AboutMe />
+            </Route>
+            <Redirect to="/" />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
       <Footer />
-    </Router>
+    </>
   );
 }
 

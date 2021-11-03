@@ -22,8 +22,18 @@
   }
 }
 
+.navbar-toggler-icon {
+  width: 32px;
+  height: 32px;
+}
+
 .nav-item {
   padding: 0 0.5rem;
+  .nav-link {
+    @media (max-width: 991px) {
+      font-size: 2rem;
+    }
+  }
 }
 
 .contact-me {

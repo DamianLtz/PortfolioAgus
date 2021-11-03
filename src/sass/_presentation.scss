@@ -3,8 +3,11 @@
   align-items: center;
   height: 100vh;
   grid-template-rows: 1fr;
-  .row{
+  .row {
     margin-top: 6rem;
+    @media (max-width: 991px) {
+      margin-top: 4.5rem;
+    }
   }
 }
 

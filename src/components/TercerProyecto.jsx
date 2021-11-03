@@ -34,7 +34,7 @@ const TercerProyecto = () => {
         </div>
         <div className="d-flex justify-content-lg-end">
           <ButtonLink
-            className="button-view-proyect"
+            className="button-view-proyect button-animate"
             content="View proyect"
             href="#/"
           >

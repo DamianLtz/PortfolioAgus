@@ -5,7 +5,7 @@ import ContactMeLogo from "../img/navbar/contactMeLogo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light navbar-portfolio fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark navbar-portfolio fixed-top">
       <div className="container-fluid">
         <div className="navbar-name">
           <p className="text-light">Agustin Ietta</p>
@@ -14,7 +14,7 @@ const Navbar = () => {
           </p>
         </div>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler shadow-none border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -22,7 +22,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon test"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="vh-100-mobile">

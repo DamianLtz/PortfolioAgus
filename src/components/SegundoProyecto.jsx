@@ -28,7 +28,7 @@ const SegundoProyecto = () => {
         </div>
         <div className="d-flex">
           <ButtonLink
-            className="button-view-proyect"
+            className="button-view-proyect button-animate"
             content="View proyect"
             href="#/"
           >

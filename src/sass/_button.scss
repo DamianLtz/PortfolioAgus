@@ -3,7 +3,27 @@
   border-radius: 40px;
   font-weight: 400;
   width: fit-content;
-  &:hover{
+  &:hover {
     color: $color-blanco;
+  }
+}
+
+.button-view-proyect {
+  background-color: $color-primario;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  &:hover {
+    background-color: $color-primario-dark;
+    color: $color-blanco;
+  }
+}
+
+.button-animate {
+  transition: background-color 0.25s ease;
+  &:hover img {
+    transform: rotate(-45deg);
+  }
+  img {
+    transition: transform 0.15s ease;
   }
 }

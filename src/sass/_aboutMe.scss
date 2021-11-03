@@ -13,19 +13,19 @@
   @media (max-width: 991px) {
     left: 32px;
   }
-  &:hover{
+  &:hover {
     background-color: $color-primario;
     color: $color-blanco;
   }
 }
 
-.button-flecha-hover{
+.button-flecha-hover {
   background-color: $color-primario;
   color: $color-blanco;
   padding: 0.75rem 1.5rem;
   width: 200px;
   border-radius: 40px;
-  &::after{
+  &::after {
     content: "Back To Home";
     padding-left: 0.75rem;
   }
@@ -66,16 +66,9 @@
   font-size: 18px;
   padding: 1rem 1.5rem;
   background-color: $color-primario;
-  transition: background-color 1s ease;
-  &:hover{
-    background-color: rgb(167, 14, 141);
+  &:hover {
+    background-color: $color-primario-dark;
     color: $color-blanco;
-  }
-  &:hover img {
-    transform: rotate(-45deg);
-  }
-  img{
-    transition: transform 0.15s ease;
   }
 }
 
