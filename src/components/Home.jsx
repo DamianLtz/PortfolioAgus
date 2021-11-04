@@ -8,7 +8,7 @@ import TercerProyecto from "./TercerProyecto";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <header>
         <Navbar />
       </header>
@@ -18,7 +18,7 @@ const Home = () => {
         <SegundoProyecto />
         <TercerProyecto />
       </main>
-    </>
+    </div>
   );
 };
 

@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <TransitionGroup>
-        <CSSTransition timeout={300} classNames="fade" key={location.key} unmountOnExit>
+      <TransitionGroup component={null}>
+        <CSSTransition timeout={300} classNames="fade" key={location.key} unmountOnExit={true}>
           <Switch>
             <Route exact path="/">
               <Home />
