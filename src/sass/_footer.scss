@@ -11,9 +11,36 @@
 }
 
 .button-footer {
+  width: 100%;
+  max-width: 388px;
   background-color: $color-primario;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
+  transition: all 0.1s ease-in;
+  @media (max-width: 991px) {
+    font-size: 1rem;
+  }
+}
+
+.button-footer-hover {
+  transition: all 1s ease;
+  &:hover {
+    background-color: $color-primario-dark;
+    color: $color-blanco;
+  }
+}
+
+.button-footer-pressed {
+  width: 100%;
+  max-width: 388px;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  background-color: $color-blanco;
+  color: $color-negro;
+  transition: all 1s ease;
+  &:hover {
+    color: $color-negro;
+  }
   @media (max-width: 991px) {
     font-size: 1rem;
   }

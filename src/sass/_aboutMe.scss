@@ -1,33 +1,43 @@
-.button-flecha {
-  display: flex;
-  align-items: center;
-  color: $color-negro;
-  background-color: #ffffff;
-  padding: 0.75rem;
+.container-flecha-back {
   top: 32px;
   left: 96px;
-  border-radius: 50%;
-  width: 50px;
-  color: $color-negro;
-  transition: background-color 0.15s ease-in-out;
   @media (max-width: 991px) {
     left: 32px;
   }
-  &:hover {
+  .button-flecha {
+    display: flex;
+    align-items: center;
+    color: $color-negro;
+    background-color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 50%;
+    width: 50px;
+    transition: opacity 0.3s ease;
+    &:hover {
+      background-color: $color-primario;
+      color: $color-blanco;
+      opacity: 0;
+      /* Inhabilita el efecto en pantallas moviles. */
+      @media (max-width: 576px) {
+        opacity: 1;
+      }
+    }
+  }
+
+  .button-flecha-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: $color-primario;
     color: $color-blanco;
-  }
-}
-
-.button-flecha-hover {
-  background-color: $color-primario;
-  color: $color-blanco;
-  padding: 0.75rem 1.5rem;
-  width: 200px;
-  border-radius: 40px;
-  &::after {
-    content: "Back To Home";
-    padding-left: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    width: 200px;
+    border-radius: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -77,3 +87,34 @@
     height: 100vh;
   }
 }
+
+/* .button-flecha {
+  display: flex;
+  align-items: center;
+  color: $color-negro;
+  background-color: #ffffff;
+  padding: 0.75rem;
+  top: 32px;
+  left: 96px;
+  border-radius: 50%;
+  width: 50px;
+  @media (max-width: 991px) {
+    left: 32px;
+  }
+  &:hover {
+    background-color: $color-primario;
+    color: $color-blanco;
+  }
+}
+
+.button-flecha-hover {
+  background-color: $color-primario;
+  color: $color-blanco;
+  padding: 0.75rem 1.5rem;
+  width: 200px;
+  border-radius: 40px;
+  &::after {
+    content: "Back To Home";
+    padding-left: 0.75rem;
+  }
+} */

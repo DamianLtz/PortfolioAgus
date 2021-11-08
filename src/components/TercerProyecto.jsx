@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-import ButtonLink from "./ButtonGoTo";
+import ButtonLink from "./ButtonLink";
 import Tag from "./Tag";
 import ScrollReveal from "scrollreveal";
 
@@ -33,13 +34,15 @@ const TercerProyecto = () => {
           <Tag content="Visual Design" />
         </div>
         <div className="d-flex justify-content-lg-end">
-          <ButtonLink
-            className="button-view-proyect button-animate"
-            content="View proyect"
-            href="#/"
-          >
-            <img src={Flecha} alt="" className="ms-2" />
-          </ButtonLink>
+        <Link to="/informacionProyecto/3">
+            <ButtonLink
+              className="button-view-proyect button-animate"
+              content="View proyect"
+              href="#/"
+            >
+              <img src={Flecha} alt="" className="ms-2" />
+            </ButtonLink>
+          </Link>
         </div>
       </div>
       <div className="col-lg-6 d-flex justify-content-start align-items-center">

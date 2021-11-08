@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import AboutMe from "./routes/AboutMe";
 import ScrollToTop from "./components/ScrollToTop";
+import InfoProyecto from "./routes/InformacionProyecto";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import { Switch, Route, Redirect, useLocation } from "react-router-dom";
@@ -12,13 +13,16 @@ function App() {
     <>
       <ScrollToTop />
       <TransitionGroup component={null}>
-        <CSSTransition timeout={300} classNames="fade" key={location.key} unmountOnExit={true}>
+        <CSSTransition timeout={350} classNames="fade" key={location.key} unmountOnExit={true}>
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
             <Route exact path="/AboutMe">
               <AboutMe />
+            </Route>
+            <Route exact path={`/informacionProyecto/:id`}>
+              <InfoProyecto />
             </Route>
             <Redirect to="/" />
           </Switch>

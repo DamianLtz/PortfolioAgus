@@ -29,7 +29,7 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 h-100 justify-content-evenly align-items-center">
               <li className="nav-item">
                 <NavLink
-                  className="nav-link text-light"
+                  className="nav-link text-light aboutme"
                   aria-current="page"
                   to="/AboutMe"
                 >
@@ -37,7 +37,10 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <a className="d-flex align-items-center nav-link text-light contact-me py-2 px-4" href="#contactMe">
+                <a
+                  className="d-flex align-items-center nav-link text-light contact-me py-2 px-4"
+                  href="#contactMe"
+                >
                   Contact me
                   <span className="ms-2">
                     <img src={ContactMeLogo} alt="" />

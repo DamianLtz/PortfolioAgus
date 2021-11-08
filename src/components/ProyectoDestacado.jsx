@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-import ButtonLink from "./ButtonGoTo";
+import ButtonLink from "./ButtonLink";
 import Tag from "./Tag";
 import ScrollReveal from "scrollreveal";
 
@@ -16,7 +17,7 @@ const Proyectos = () => {
     });
   });
   return (
-    <div className="row container-proyectos" id="proyectos">
+    <div className="row container-proyectos">
       <div className="col-lg-12 d-flex flex-column align-items-center">
         <img
           src={ProyectoUno}
@@ -34,14 +35,15 @@ const Proyectos = () => {
           <Tag content="Design System" />
           <Tag content="Visual Design" />
         </div>
-        <ButtonLink
-          className="button-view-proyect button-animate"
-          content="View proyect"
-          id="goToUno"
-          href="#/"
-        >
-          <img src={Flecha} alt="" className="ms-2" id="imageChange" />
-        </ButtonLink>
+        <Link to="/informacionProyecto/1">
+          <ButtonLink
+            className="button-view-proyect button-animate"
+            content="View proyect"
+            id="goToUno"
+          >
+            <img src={Flecha} alt="" className="ms-2" />
+          </ButtonLink>
+        </Link>
       </div>
     </div>
   );

@@ -34,6 +34,30 @@
       font-size: 2rem;
     }
   }
+  .aboutme {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      height: 6px;
+      width: 40px;
+      opacity: 0;
+      background: $color-primario;
+      border-radius: 4px;
+      transition: all 0.25s linear;
+    }
+    &:hover {
+      color: $color-blanco;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
 }
 
 .contact-me {

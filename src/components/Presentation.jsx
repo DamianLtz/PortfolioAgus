@@ -5,6 +5,11 @@ import ArrowDown from "../img/main/ArrowDown.svg";
 import ScrollReveal from "scrollreveal";
 
 const Presentation = () => {
+  function scrollTop(condition) {
+    if (condition === true) {
+      window.scrollTo(0, 1000);
+    }
+  }
   useEffect(() => {
     ScrollReveal().reveal(".moon", {
       delay: 1000,
@@ -29,12 +34,14 @@ const Presentation = () => {
           </div>
         </div>
       </div>
-      <a
-        href="#proyectos"
-        className="d-flex align-items-center justify-content-center p-4"
-      >
-        <img src={ArrowDown} alt="" />
-      </a>
+      <div className="d-flex align-items-center justify-content-center">
+        <button
+          className="py-3 px-4 bg-transparent border-0 rounded-circle"
+          onClick={() => scrollTop(true)}
+        >
+          <img src={ArrowDown} alt="" />
+        </button>
+      </div>
     </div>
   );
 };
