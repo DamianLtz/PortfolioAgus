@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/PortfolioAgus/static/css/main.78816076.chunk.css",
-    "main.js": "/PortfolioAgus/static/js/main.f51eee9c.chunk.js",
-    "main.js.map": "/PortfolioAgus/static/js/main.f51eee9c.chunk.js.map",
+    "main.css": "/PortfolioAgus/static/css/main.e3a7a670.chunk.css",
+    "main.js": "/PortfolioAgus/static/js/main.6e1070bf.chunk.js",
+    "main.js.map": "/PortfolioAgus/static/js/main.6e1070bf.chunk.js.map",
     "runtime-main.js": "/PortfolioAgus/static/js/runtime-main.eeef056e.js",
     "runtime-main.js.map": "/PortfolioAgus/static/js/runtime-main.eeef056e.js.map",
-    "static/js/2.6fdd3591.chunk.js": "/PortfolioAgus/static/js/2.6fdd3591.chunk.js",
-    "static/js/2.6fdd3591.chunk.js.map": "/PortfolioAgus/static/js/2.6fdd3591.chunk.js.map",
+    "static/js/2.8d230ac8.chunk.js": "/PortfolioAgus/static/js/2.8d230ac8.chunk.js",
+    "static/js/2.8d230ac8.chunk.js.map": "/PortfolioAgus/static/js/2.8d230ac8.chunk.js.map",
     "index.html": "/PortfolioAgus/index.html",
-    "static/css/main.78816076.chunk.css.map": "/PortfolioAgus/static/css/main.78816076.chunk.css.map",
-    "static/js/2.6fdd3591.chunk.js.LICENSE.txt": "/PortfolioAgus/static/js/2.6fdd3591.chunk.js.LICENSE.txt",
+    "static/css/main.e3a7a670.chunk.css.map": "/PortfolioAgus/static/css/main.e3a7a670.chunk.css.map",
+    "static/js/2.8d230ac8.chunk.js.LICENSE.txt": "/PortfolioAgus/static/js/2.8d230ac8.chunk.js.LICENSE.txt",
     "static/media/ArrowDown.96d5dc99.svg": "/PortfolioAgus/static/media/ArrowDown.96d5dc99.svg",
     "static/media/BlancoyNegro.488fbaea.png": "/PortfolioAgus/static/media/BlancoyNegro.488fbaea.png",
     "static/media/Flecha.7d14ce09.svg": "/PortfolioAgus/static/media/Flecha.7d14ce09.svg",
+    "static/media/HandWaving.a5d700c3.svg": "/PortfolioAgus/static/media/HandWaving.a5d700c3.svg",
+    "static/media/HandsClapping.1c0960c9.svg": "/PortfolioAgus/static/media/HandsClapping.1c0960c9.svg",
     "static/media/contactMeLogo.0c5cf90c.svg": "/PortfolioAgus/static/media/contactMeLogo.0c5cf90c.svg",
     "static/media/moon.9aa77f92.png": "/PortfolioAgus/static/media/moon.9aa77f92.png",
     "static/media/proyectoDos.836fbad1.png": "/PortfolioAgus/static/media/proyectoDos.836fbad1.png",
@@ -21,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eeef056e.js",
-    "static/js/2.6fdd3591.chunk.js",
-    "static/css/main.78816076.chunk.css",
-    "static/js/main.f51eee9c.chunk.js"
+    "static/js/2.8d230ac8.chunk.js",
+    "static/css/main.e3a7a670.chunk.css",
+    "static/js/main.6e1070bf.chunk.js"
   ]
 }
