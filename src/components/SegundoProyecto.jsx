@@ -40,7 +40,7 @@ const SegundoProyecto = () => {
         </div>
       </div>
       <div className="col-lg-6 d-flex justify-content-end align-items-center">
-        <img src={img} alt="" className="img-fluid mt-5" id="segundoProyecto" />
+        <img src={img} alt="" className="img-fluid mt-5 mt-lg-0" id="segundoProyecto" />
       </div>
     </div>
   );
