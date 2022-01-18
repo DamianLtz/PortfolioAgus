@@ -59,9 +59,13 @@
       padding: 0 1.5rem;
       font-size: 1.25rem;
       &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -12px;
         content: "";
         display: block;
-        margin: 0.5rem auto;
+        margin: 0 auto;
         height: 6px;
         width: 40px;
         opacity: 0;
@@ -79,5 +83,27 @@
         padding: 0 1rem;
       }
     }
+  }
+}
+
+.developed {
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 6px;
+    width: 40px;
+    opacity: 0;
+    background: $color-primario;
+    border-radius: 4px;
+    transition: all 0.25s linear;
+  }
+  &:hover::after{
+    opacity: 1;
   }
 }

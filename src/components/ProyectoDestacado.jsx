@@ -27,10 +27,10 @@ const Proyectos = () => {
         />
         <h2>Pampa</h2>
         <p className="text-lg-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          A design system for a desktop a mobile product.
         </p>
-        <p>Massa lectus sit lorem varius orci nulla libero.</p>
-        <p>Ultrices eget mattis nunc scelerisque consequat.</p>
+        <p>I started to design from 0, to improve consistency and</p>
+        <p> reutilization in the day to day work.</p>
         <div className="d-flex align-items-center">
           <Tag content="Design System" />
           <Tag content="Visual Design" />
@@ -39,8 +39,7 @@ const Proyectos = () => {
           <ButtonLink
             className="button-view-proyect button-animate"
             content="View proyect"
-            id="goToUno"
-          >
+            id="goToUno">
             <img src={Flecha} alt="" className="ms-2" />
           </ButtonLink>
         </Link>

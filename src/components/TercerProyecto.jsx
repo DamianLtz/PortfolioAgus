@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import ButtonLink from "./ButtonLink";
+import Button from "./ButtonSoon";
 import Tag from "./Tag";
 import ScrollReveal from "scrollreveal";
 
@@ -9,6 +9,8 @@ import Flecha from "../img/main/Flecha.svg";
 import img from "../img/main/proyectoTres.png";
 
 const TercerProyecto = () => {
+  const listTags = ["Design Thinking", "User research"];
+
   useEffect(() => {
     ScrollReveal().reveal("#tercerProyecto", {
       delay: 250,
@@ -19,29 +21,29 @@ const TercerProyecto = () => {
   return (
     <div className="row container-proyectos">
       <div className="col-lg-6 order-2">
-        <h3 className="text-lg-end">Pampa</h3>
+        <h3 className="text-lg-end">Emoción Escrita</h3>
         <p className="text-lg-end">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
+          A 8 professionals team investigate and empathice
         </p>
         <p className="text-lg-end">
-          elit. Massa lectus sit lorem varius orci nulla libero.
+          with the sanitary workers to resolve a significant
         </p>
         <p className="text-lg-end">
-          Ultrices eget mattis nunc scelerisque consequat
+          problem: how can i express all my emotions?
         </p>
         <div className="d-flex align-items-center justify-content-lg-end">
-          <Tag content="Design System" />
-          <Tag content="Visual Design" />
+          {listTags.map((tag) => {
+            return <Tag key={tag} content={tag} />;
+          })}
         </div>
         <div className="d-flex justify-content-lg-end">
-        <Link to="/informacionProyecto/3">
-            <ButtonLink
-              className="button-view-proyect button-animate"
-              content="View proyect"
-              href="#/"
-            >
+          <Link to="/informacionProyecto/3">
+            <Button
+              className="button-soon button-animate"
+              content="Soon"
+              href="#/">
               <img src={Flecha} alt="" className="ms-2" />
-            </ButtonLink>
+            </Button>
           </Link>
         </div>
       </div>

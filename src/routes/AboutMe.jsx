@@ -9,7 +9,7 @@ import Flecha from "../img/main/Flecha.svg";
 const AboutMe = () => {
   return (
     <main>
-      <div className="position-relative vh-lg-100">
+      <div className="position-relative vh-lg-100 bg-about-me">
         <img src={BgAboutMe} alt="" className="img-fluid w-100 img-aboutMe" />
         <Link to="/">
           <ButtonBack />
@@ -22,29 +22,27 @@ const AboutMe = () => {
       <div className="container container-aboutMe">
         <div className="row">
           <div className="col-lg-5">
-            <h2 className="aboutme-titulo">Hello!</h2>
+            <h2 className="aboutme-titulo">Hello</h2>
             <div className="aboutMe-info">
               <p className="fs-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis nibh consequat nunc, a scelerisque. Congue velit
-                adipiscing vitae aliquam at cras condimentum. eni
+                I'm Agustín, Product designer with almost 3 years of experience
+                in UX and a huge background in graphic and audiovisual design.
               </p>
               <p className="fs-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis nibh consequat nunc, a scelerisque. Congue velit
-                adipiscing vitae aliquam at cras condimentum. eni
+                I started to work on development web startup with an ambicious
+                self product. I was the first UX/UI designer. Later, to keep
+                learning, i started to work in a software factory and finally as
+                a product designer in a bank.
               </p>
               <p className="fs-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis nibh consequat nunc, a scelerisque. Congue velit
-                adipiscing vitae aliquam at cras condimentum. eni
+                Other things about me: I love music, i can listen to it all the
+                time (really) i like to teach, im a UX/UI professor.
               </p>
             </div>
             <ButtonLink
-              className="button-aboutMe button-animate"
+              className="button-aboutMe button-animate my-4"
               content="Full profile on LinkedIn"
-              href="#/"
-            >
+              href="#/">
               <img src={Flecha} alt="" className="ms-2 flechita" />
             </ButtonLink>
           </div>
