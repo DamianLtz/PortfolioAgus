@@ -1,8 +1,8 @@
 import React from "react";
 
-const tag = ({ content }) => {
+const tag = ({ content, className }) => {
   return (
-    <div className="d-flex align-items-center tag">{content}</div>
+    <p className={`tag ${className ? className : ""}`}>{content}</p>
   );
 };
 

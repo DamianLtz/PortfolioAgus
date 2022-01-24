@@ -2,14 +2,32 @@
   border: none;
   border-radius: 40px;
   font-weight: 400;
- /*  width: fit-content; */
   transition: all 0.35s ease;
+}
+
+.container-buttons{
+  flex-direction: column;
+  // align-items: center;
+  @media (min-width: 991px) {
+    flex-direction: row;
+  }
 }
 
 .button-view-proyect {
   background-color: $color-primario;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
+  &:hover {
+    background-color: $color-primario-dark;
+    color: $color-blanco;
+  }
+}
+
+.button-aboutMe {
+  font-size: 18px;
+  padding: 1rem 1.5rem;
+  width: fit-content;
+  background-color: $color-primario;
   &:hover {
     background-color: $color-primario-dark;
     color: $color-blanco;
@@ -25,6 +43,23 @@
   &:hover {
     background-color: $color-primario-dark;
     color: $color-blanco;
+  }
+}
+
+.button-download {
+  font-size: 18px;
+  margin-left: 0;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  background-color: $color-negro;
+  border: 1px solid $color-border-negro;
+  &:hover {
+    background-color: $color-primario-dark;
+    color: $color-blanco;
+    border: 1px solid transparent;
+  }
+  @media (min-width: 991px) {
+    margin-left: 2rem;
   }
 }
 

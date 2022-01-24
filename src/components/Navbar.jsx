@@ -7,12 +7,12 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-portfolio fixed-top">
       <div className="container-fluid">
-        <div className="navbar-name">
+        <NavLink to="/" className="navbar-name">
           <p className="text-light">Agustin Ietta</p>
           <p className="text-light">
             <span className="fw-bold">- </span>Product Designer
           </p>
-        </div>
+        </NavLink>
         <button
           className="navbar-toggler shadow-none border-0"
           type="button"
@@ -20,8 +20,7 @@ const Navbar = () => {
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span className="navbar-toggler-icon test"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,16 +30,14 @@ const Navbar = () => {
                 <NavLink
                   className="nav-link text-light aboutme"
                   aria-current="page"
-                  to="/AboutMe"
-                >
+                  to="/AboutMe">
                   About me
                 </NavLink>
               </li>
               <li className="nav-item">
                 <a
                   className="d-flex align-items-center nav-link text-light contact-me py-2 px-4"
-                  href="#contactMe"
-                >
+                  href="#contactMe">
                   Contact me
                   <span className="ms-2">
                     <img src={ContactMeLogo} alt="" />

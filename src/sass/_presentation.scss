@@ -3,7 +3,7 @@
   align-items: center;
   height: 100vh;
   grid-template-rows: 1fr;
-  .row {
+  .container-cols-presentation {
     margin-top: 4.5rem;
     @media (min-width: 991px) {
       margin-top: 6rem;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ButtonEmail from "./ButtonEmail";
 import emailCopyIcon from "../img/footer/HandWaving.svg";
-// import emailCopiedIcon from "../img/footer/HandsClapping.svg";
-/* agustinfrancoietta@gmail.com */
+import CvAgus from "../documents/CV_Agustin_Ietta.pdf";
+
 const Footer = () => {
   const emailInitialState = () => {
     return (
@@ -103,28 +103,47 @@ const Footer = () => {
     <footer id="contactMe">
       <div className="container">
         <div className="row footer">
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <h2 className="title-footer text-light">Let's work together</h2>
-            <ButtonEmail onClick={() => setEmailClicked(emailClickedState())}>
-              {emailClicked}
-            </ButtonEmail>
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <div className="d-flex flex-column align-items-center">
+              <h2 className="title-footer text-light">Let's work together</h2>
+              <p className="fs-5 pb-5">
+                Contact me for jobs, freelance projects or say hi :)
+              </p>
+              <ButtonEmail onClick={() => setEmailClicked(emailClickedState())}>
+                {emailClicked}
+              </ButtonEmail>
+            </div>
           </div>
         </div>
         <div className="row py-5">
           <div className="col-lg-6 col-md-6 col-sm-12 order-md-1 g-0">
             <ul className="d-flex align-items-center justify-content-center justify-content-md-end redes">
               <li>
-                <a href="/" alt="" className="position-relative">
+                <a
+                  href="https://www.linkedin.com/in/agustin-ietta/"
+                  alt=""
+                  className="position-relative">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="/" alt="" className="position-relative">
+                <a href={CvAgus} alt="" className="position-relative">
+                  Download CV
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://agustinietta.medium.com"
+                  alt=""
+                  className="position-relative">
                   Medium
                 </a>
               </li>
               <li>
-                <a href="/" alt="" className="position-relative">
+                <a
+                  href="https://dribbble.com/geniusaturn"
+                  alt=""
+                  className="position-relative">
                   Dribble
                 </a>
               </li>
@@ -134,7 +153,11 @@ const Footer = () => {
             <h6 className="text-muted fw-normal">
               Designed by me & developed by{" "}
               <span>
-                <a href="/" className="text-muted developed">Damian Laterza</a>
+                <a
+                  href="https://portfolio-zeta-topaz-63.vercel.app/"
+                  className="text-muted developed">
+                  Damian Laterza
+                </a>
               </span>
             </h6>
           </div>

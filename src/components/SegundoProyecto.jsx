@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import ScrollReveal from "scrollreveal";
-import Button from "./ButtonSoon";
+import Button from "./ButtonLink";
 import Tag from "./Tag";
 
 import Flecha from "../img/main/Flecha.svg";
@@ -22,22 +21,25 @@ const SegundoProyecto = () => {
     <div className="row container-proyectos">
       <div className="col-lg-6">
         <h3>Quiero!</h3>
-        <p>A case study where me and my team improved the</p>
-        <p>expiration of points in the benefits product, Quiero!</p>
+        <p className="description-proyect">
+          A case study where me and my team improved the
+        </p>
+        <p className="description-proyect">
+          expiration of points in the benefits product, Quiero!
+        </p>
         <div className="d-flex align-items-center">
           {listTags.map((tag) => {
             return <Tag key={tag} content={tag} />;
           })}
         </div>
         <div className="d-flex">
-          <Link to="/informacionProyecto/2">
-            <Button
-              className="button-soon button-animate"
-              content="Soon"
-              href="#/">
-              <img src={Flecha} alt="" className="ms-2" />
-            </Button>
-          </Link>
+          <Button
+            to="/informacionProyecto/2"
+            className="button-view-proyect button-animate"
+            content="View proyect"
+            id="goToUno">
+            <img src={Flecha} alt="" className="ms-2" />
+          </Button>
         </div>
       </div>
       <div className="col-lg-6 d-flex justify-content-end align-items-center">

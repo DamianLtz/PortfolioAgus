@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import BgAboutMe from "../img/AboutMe/BlancoyNegro.png";
+import CvAgus from "../documents/CV_Agustin_Ietta.pdf"
+// Botones:
 import ButtonBack from "../components/ButtonBack";
-import ButtonLink from "../components/ButtonLink";
+import ButtonLink from "../components/ButtonLinkExterno"
 import Flecha from "../img/main/Flecha.svg";
 
 const AboutMe = () => {
@@ -21,7 +23,7 @@ const AboutMe = () => {
       </div>
       <div className="container container-aboutMe">
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-lg-6">
             <h2 className="aboutme-titulo">Hello</h2>
             <div className="aboutMe-info">
               <p className="fs-5">
@@ -39,12 +41,20 @@ const AboutMe = () => {
                 time (really) i like to teach, im a UX/UI professor.
               </p>
             </div>
-            <ButtonLink
-              className="button-aboutMe button-animate my-4"
-              content="Full profile on LinkedIn"
-              href="#/">
-              <img src={Flecha} alt="" className="ms-2 flechita" />
-            </ButtonLink>
+            <div className="d-flex container-buttons">
+              <ButtonLink
+                className="button-aboutMe button-animate my-4"
+                content="Full profile on LinkedIn"
+                href="https://www.linkedin.com/in/agustin-ietta/">
+                <img src={Flecha} alt="" className="ms-2 flechita" />
+              </ButtonLink>
+              <ButtonLink
+                className="button-download button-animate my-4"
+                content="Download CV"
+                href={CvAgus}>
+                <img src={Flecha} alt="" className="ms-2 flechita" />
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </div>
@@ -53,31 +63,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
-/* <Link
-          className={`${hovering} position-fixed`}
-          to="/"
-          onMouseOver={() => setHovering("button-flecha button-flecha-hover")}
-          onMouseLeave={() => setHovering("button-flecha")}
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M2.125 8C2.125 7.79289 2.29289 7.625 2.5 7.625H13.5C13.7071 7.625 13.875 7.79289 13.875 8C13.875 8.20711 13.7071 8.375 13.5 8.375H2.5C2.29289 8.375 2.125 8.20711 2.125 8Z"
-              fill="CurrentColor"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M7.26516 3.23483C7.41161 3.38128 7.41161 3.61872 7.26516 3.76517L3.03033 8L7.26516 12.2348C7.41161 12.3813 7.41161 12.6187 7.26516 12.7652C7.11872 12.9116 6.88128 12.9116 6.73484 12.7652L2.23483 8.26516C2.08839 8.11872 2.08839 7.88128 2.23483 7.73484L6.73484 3.23483C6.88128 3.08839 7.11872 3.08839 7.26516 3.23483Z"
-              fill="CurrentColor"
-            />
-          </svg>
-        </Link> */

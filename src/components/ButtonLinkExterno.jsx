@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const ButtonLink = ({ className, content, id, to, children }) => {
+const ButtonLink = ({ className, content, id, href, children }) => {
   return (
-    <Link
-      to={`${to}`}
+    <a
+      href={href}
       className={`button d-flex align-items-center ${className}`}
       id={id}>
       {content}
       {children}
-    </Link>
+    </a>
   );
 };
 

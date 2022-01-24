@@ -23,7 +23,7 @@ const Presentation = () => {
   });
   return (
     <div className="container-presentation">
-      <div className="row">
+      <div className="row container-cols-presentation">
         <div className="col-lg-12 position-relative">
           <h1 className="title-presentation text-light">
             A designer who loves <br />

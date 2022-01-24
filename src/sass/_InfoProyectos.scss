@@ -1,0 +1,14 @@
+.bg-presentation-proyect{
+    background-color: $color-blanco;
+}
+
+.title-proyect{
+    font-size: 4rem;
+    @media (min-width: 1400px) {
+        font-size: 5rem;
+    }
+}
+
+.container-overview{
+    padding: 5rem 3rem;
+}

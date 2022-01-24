@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import Button from "./ButtonSoon";
 import Tag from "./Tag";
@@ -22,13 +21,13 @@ const TercerProyecto = () => {
     <div className="row container-proyectos">
       <div className="col-lg-6 order-2">
         <h3 className="text-lg-end">Emoción Escrita</h3>
-        <p className="text-lg-end">
+        <p className="text-lg-end description-proyect">
           A 8 professionals team investigate and empathice
         </p>
-        <p className="text-lg-end">
+        <p className="text-lg-end description-proyect">
           with the sanitary workers to resolve a significant
         </p>
-        <p className="text-lg-end">
+        <p className="text-lg-end description-proyect">
           problem: how can i express all my emotions?
         </p>
         <div className="d-flex align-items-center justify-content-lg-end">
@@ -37,14 +36,13 @@ const TercerProyecto = () => {
           })}
         </div>
         <div className="d-flex justify-content-lg-end">
-          <Link to="/informacionProyecto/3">
-            <Button
-              className="button-soon button-animate"
-              content="Soon"
-              href="#/">
-              <img src={Flecha} alt="" className="ms-2" />
-            </Button>
-          </Link>
+          <Button
+            to="/informacionProyecto/3"
+            className="button-view-proyect button-animate"
+            content="View proyect"
+            id="goToUno">
+            <img src={Flecha} alt="" className="ms-2" />
+          </Button>
         </div>
       </div>
       <div className="col-lg-6 d-flex justify-content-start align-items-center">
