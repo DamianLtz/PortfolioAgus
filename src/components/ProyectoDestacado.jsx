@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import Button from "./ButtonLink";
 import Tag from "./Tag";
 import ScrollReveal from "scrollreveal";

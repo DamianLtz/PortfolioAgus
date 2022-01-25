@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import ButtonEmail from "./ButtonEmail";
+import React, { useState } from "react";
 import emailCopyIcon from "../img/footer/HandWaving.svg";
 import CvAgus from "../documents/CV_Agustin_Ietta.pdf";
 
@@ -22,7 +21,7 @@ const Footer = () => {
   const emailClickedState = () => {
     navigator.clipboard.writeText("agustinfrancoietta@gmail.com");
     setTimeout(() => {
-      setEmailClicked(emailInitialState());
+      setEmailClicked(false);
     }, 5000);
     return (
       <button className="button button-clicked d-flex align-items-center justify-content-center">
@@ -93,25 +92,21 @@ const Footer = () => {
     );
   };
 
-  const [emailClicked, setEmailClicked] = useState(emailInitialState());
-
-  useEffect(() => {
-    return () => clearTimeout(emailClickedState);
-  });
+  const [emailClicked, setEmailClicked] = useState(false);
 
   return (
-    <footer id="contactMe">
+    <footer>
       <div className="container">
         <div className="row footer">
           <div className="col-lg-12 col-md-12 col-sm-12">
-            <div className="d-flex flex-column align-items-center">
+            <div className="d-flex flex-column align-items-center justify-content-center h-100">
               <h2 className="title-footer text-light">Let's work together</h2>
               <p className="fs-5 pb-5">
                 Contact me for jobs, freelance projects or say hi :)
               </p>
-              <ButtonEmail onClick={() => setEmailClicked(emailClickedState())}>
-                {emailClicked}
-              </ButtonEmail>
+              <div onClick={() => setEmailClicked(true)}>
+                {emailClicked ? emailClickedState() : emailInitialState()}
+              </div>
             </div>
           </div>
         </div>

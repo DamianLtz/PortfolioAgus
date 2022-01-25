@@ -1,16 +1,15 @@
 import React from "react";
 
-const ButtonBack = () => {
+const ButtonBack = ({ className }) => {
   return (
     <div className="position-fixed container-flecha-back">
-      <button className="button-flecha border-0">
+      <button className={`button-flecha border-0 ${className}`}>
         <svg
           width="24"
           height="24"
           viewBox="0 0 16 16"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -31,8 +30,7 @@ const ButtonBack = () => {
           height="24"
           viewBox="0 0 16 16"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"

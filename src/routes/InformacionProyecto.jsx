@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
@@ -7,18 +7,39 @@ import Tag from "../components/Tag";
 import ButtonBack from "../components/ButtonBack";
 
 const InformacionProyecto = () => {
+  const [backDark, setBackDark] = useState(false);
   const { id } = useParams();
   const idProyect = parseInt(id);
-
   const selectedProyect = ListaProyectos.find(
     (ListaProyectos) => idProyect === ListaProyectos.id
   );
+
+  const changeBackground = () => {
+    if (window.scrollY >= 875 && window.screen.width > 1272) {
+      setBackDark(true);
+      console.log("desktop");
+    } else if (window.scrollY >= 650 && window.screen.width <= 1272) {
+      setBackDark(true);
+    } else if (window.scrollY >= 590 && window.screen.width <= 576) {
+      setBackDark(true);
+    } else {
+      setBackDark(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
 
   return (
     <main>
       <section className="position-relative vh-lg-100">
         <Link to="/">
-          <ButtonBack />
+          <ButtonBack className={backDark ? "button-flecha-dark" : ""} />
         </Link>
         <div className="container-presentation justify-items-center">
           <div className="row">
@@ -30,9 +51,7 @@ const InformacionProyecto = () => {
                 <div>
                   <div className="d-flex tags-adjust">
                     {selectedProyect.tags.map((tag) => {
-                      return (
-                        <Tag key={tag} content={tag} />
-                      );
+                      return <Tag key={tag} content={tag} />;
                     })}
                   </div>
                 </div>
