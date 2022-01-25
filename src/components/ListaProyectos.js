@@ -27,7 +27,6 @@ import QuieroImg14 from "../img/proyectsInfo/quiero/14.png"
 import QuieroImg15 from "../img/proyectsInfo/quiero/15.png"
 import QuieroImg16 from "../img/proyectsInfo/quiero/16.png"
 import QuieroImg17 from "../img/proyectsInfo/quiero/17.png"
-import QuieroImg18 from "../img/proyectsInfo/quiero/18.png"
 import QuieroImg19 from "../img/proyectsInfo/quiero/19.png"
 import QuieroImg20 from "../img/proyectsInfo/quiero/20.png"
 import QuieroImg21 from "../img/proyectsInfo/quiero/21.png"
@@ -52,7 +51,7 @@ const ListaProyectos = [
         overview: "This one is a short experiment, based on Lean UX methodology. This experiment is for understanding how to improve points expiration on the benefits program, Quiero!",
         role: "Product Designer",
         year: "2021 working at Galicia Bank",
-        imagesProyect: [QuieroImg1, QuieroImg2, QuieroImg3, QuieroImg4, QuieroImg5, QuieroImg6, QuieroImg7, QuieroImg8, QuieroImg9, QuieroImg10, QuieroImg11, QuieroImg12, QuieroImg13, QuieroImg14, QuieroImg15, QuieroImg16, QuieroImg17, QuieroImg18, QuieroImg19, QuieroImg20, QuieroImg21, QuieroImg22]
+        imagesProyect: [QuieroImg1, QuieroImg2, QuieroImg3, QuieroImg4, QuieroImg5, QuieroImg6, QuieroImg7, QuieroImg8, QuieroImg9, QuieroImg10, QuieroImg11, QuieroImg12, QuieroImg13, QuieroImg14, QuieroImg15, QuieroImg16, QuieroImg17, QuieroImg19, QuieroImg20, QuieroImg21, QuieroImg22]
     }
 ]
 
