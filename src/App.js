@@ -1,14 +1,19 @@
+import React, { useContext } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { UserContext } from "./contexts/UserContext";
+import { Routes, Route, useLocation } from "react-router-dom";
+
+//Componentes: 
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import AboutMe from "./routes/AboutMe";
 import ScrollToTop from "./components/ScrollToTop";
 import InfoProyecto from "./routes/InformacionProyecto";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-
-import { Routes, Route, useLocation } from "react-router-dom";
+import NotAvailable from "./components/NotAvailable";
 
 function App() {
   const location = useLocation();
+  const { user } = useContext(UserContext);
   return (
     <>
       <ScrollToTop />
@@ -17,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/AboutMe" element={<AboutMe />} />
-            <Route path={`/informacionProyecto/:id`} element={<InfoProyecto />} />
+            <Route path={`/informacionProyecto/:id`} element={user ? <InfoProyecto /> : <NotAvailable />} />
           </Routes>
         </CSSTransition>
       </TransitionGroup>
