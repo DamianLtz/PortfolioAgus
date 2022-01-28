@@ -5,7 +5,7 @@ export const UserContext = createContext();
 export const UseUserContext = () => useContext(UserContext);
 
 const UserProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("agus");
 
   const login = (userSignIn, password) => {
     if (userSignIn === "admin" && password === 6277) {
