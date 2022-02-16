@@ -22,10 +22,7 @@ const SegundoProyecto = () => {
       <div className="col-lg-6">
         <h3>Quiero!</h3>
         <p className="description-proyect">
-          A case study where me and my team improved the
-        </p>
-        <p className="description-proyect">
-          expiration of points in the benefits product, Quiero!
+          A case study where me and my team improved the expiration of points in the benefits product, Quiero!
         </p>
         <div className="d-flex align-items-center">
           {listTags.map((tag) => {

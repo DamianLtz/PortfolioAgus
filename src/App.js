@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { UserContext } from "./contexts/UserContext";
+import { UseUserContext } from "./contexts/UserContext";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 //Componentes: 
@@ -13,7 +13,7 @@ import NotAvailable from "./components/NotAvailable";
 
 function App() {
   const location = useLocation();
-  const { user } = useContext(UserContext);
+  const { user } = UseUserContext();
   return (
     <>
       <ScrollToTop />

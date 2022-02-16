@@ -145,7 +145,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 me-auto pt-4 pt-md-0 d-flex align-items-center justify-content-md-start justify-content-center">
-            <h6 className="text-muted fw-normal">
+            <h6 className="text-muted fw-normal text-center text-lg-start">
               Designed by me & developed by{" "}
               <span>
                 <a

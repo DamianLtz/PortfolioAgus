@@ -25,14 +25,7 @@ const Proyectos = () => {
         />
         <h2>Pampa</h2>
         <p className="text-lg-center description-proyect">
-          A design system for a desktop a mobile product.
-        </p>
-        <p className="description-proyect">
-          I started to design from 0, to improve consistency and
-        </p>
-        <p className="description-proyect">
-          {" "}
-          reutilization in the day to day work.
+          A design system for a desktop a mobile product.  I started to design from 0, to improve consistency and reutilization in the day to day work.
         </p>
         <div className="d-flex align-items-center">
           <Tag content="Design System" />

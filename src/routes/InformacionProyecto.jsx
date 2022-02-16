@@ -17,7 +17,6 @@ const InformacionProyecto = () => {
   const changeBackground = () => {
     if (window.scrollY >= 875 && window.screen.width > 1272) {
       setBackDark(true);
-      console.log("desktop");
     } else if (window.scrollY >= 650 && window.screen.width <= 1272) {
       setBackDark(true);
     } else if (window.scrollY >= 590 && window.screen.width <= 576) {
@@ -48,7 +47,7 @@ const InformacionProyecto = () => {
                 <h1 className="text-light text-center title-proyect">
                   {selectedProyect.title}
                 </h1>
-                <div>
+                <div className="d-flex">
                   <div className="d-flex tags-adjust">
                     {selectedProyect.tags.map((tag) => {
                       return <Tag key={tag} content={tag} />;
@@ -70,7 +69,7 @@ const InformacionProyecto = () => {
               <h4 className="text-dark pb-3">Overview</h4>
               <p className="text-dark">{selectedProyect.overview}</p>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 my-lg-0 my-4">
               <h4 className="text-dark pb-3">My Role</h4>
               <p className="text-dark">{selectedProyect.role}</p>
             </div>
@@ -82,7 +81,7 @@ const InformacionProyecto = () => {
         </div>
       </section>
       <section className="bg-presentation-proyect">
-        <div className="container">
+        <div className="container-fluid p-0">
           {selectedProyect.imagesProyect.map((image) => {
             return (
               <img key={image} src={image} alt="" className="img-fluid w-100" />

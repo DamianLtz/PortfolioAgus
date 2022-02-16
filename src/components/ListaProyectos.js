@@ -32,6 +32,11 @@ import QuieroImg20 from "../img/proyectsInfo/quiero/20.png"
 import QuieroImg21 from "../img/proyectsInfo/quiero/21.png"
 import QuieroImg22 from "../img/proyectsInfo/quiero/22.png"
 
+//------------------------ Mercado POS ------------------------//
+
+import MPosImg1 from "../img/main/proyectoCuatro.png";
+import MPosImg2 from "../img/proyectsInfo/mercadoPos/img1.jpg";
+
 const ListaProyectos = [
     {
         title: "Pampa",
@@ -52,7 +57,17 @@ const ListaProyectos = [
         role: "Product Designer",
         year: "2021 working at Galicia Bank",
         imagesProyect: [QuieroImg1, QuieroImg2, QuieroImg3, QuieroImg4, QuieroImg5, QuieroImg6, QuieroImg7, QuieroImg8, QuieroImg9, QuieroImg10, QuieroImg11, QuieroImg12, QuieroImg13, QuieroImg14, QuieroImg15, QuieroImg16, QuieroImg17, QuieroImg19, QuieroImg20, QuieroImg21, QuieroImg22]
-    }
+    },
+    {
+        title: "MercadoPOS",
+        id: 3,
+        tags: ["Design Thinking", "Lean UX"],
+        image: MPosImg1,
+        overview: "This is a personal challengue to design MercadoPos function at Mercadopago and make a promotional landing for it.",
+        role: "Product Designer",
+        year: "2022",
+        imagesProyect: [MPosImg2]
+    },
 ]
 
 export default ListaProyectos;

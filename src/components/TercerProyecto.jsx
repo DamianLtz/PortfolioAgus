@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 
-import Button from "./ButtonSoon";
+import Button from "./ButtonLink";
 import Tag from "./Tag";
 import ScrollReveal from "scrollreveal";
 
 import Flecha from "../img/main/Flecha.svg";
-import img from "../img/main/proyectoTres.png";
+import img from "../img/main/proyectoCuatro.png";
 
 const TercerProyecto = () => {
-  const listTags = ["Design Thinking", "User research"];
+  const listTags = ["Design Thinking", "Lean UX"];
 
   useEffect(() => {
     ScrollReveal().reveal("#tercerProyecto", {
@@ -20,15 +20,9 @@ const TercerProyecto = () => {
   return (
     <div className="row container-proyectos">
       <div className="col-lg-6 order-2">
-        <h3 className="text-lg-end">Emoción Escrita</h3>
+        <h3 className="text-lg-end">MercadoPOS</h3>
         <p className="text-lg-end description-proyect">
-          A 8 professionals team investigate and empathice
-        </p>
-        <p className="text-lg-end description-proyect">
-          with the sanitary workers to resolve a significant
-        </p>
-        <p className="text-lg-end description-proyect">
-          problem: how can i express all my emotions?
+        This is a personal challengue to design MercadoPos function at Mercadopago and make a short experiment to validate an a hiphotesys
         </p>
         <div className="d-flex align-items-center justify-content-lg-end">
           {listTags.map((tag) => {

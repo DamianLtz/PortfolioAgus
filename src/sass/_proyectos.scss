@@ -19,11 +19,14 @@
     }
     .description-proyect {
       font-size: 1.5rem;
+      @media (min-width: 991px) {
+        width: 40ch;
+      }
     }
   }
   .col-lg-6 {
     h3 {
-      font-size: 4rem;
+      font-size: 3rem;
       padding: 1rem 0;
       @media (min-width: 991px) {
         font-size: 4rem;
@@ -45,9 +48,12 @@
 }
 
 .title-proyect {
-  font-size: 4rem;
+  font-size: 3rem;
   @media (min-width: 1400px) {
     font-size: 5rem;
+  }
+  @media (min-width: 991px) {
+    font-size: 4rem;
   }
 }
 
