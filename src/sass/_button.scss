@@ -53,6 +53,9 @@
   padding: 1rem 1.5rem;
   background-color: $color-negro;
   border: 1px solid $color-border-negro;
+  img{
+    transform: rotate(90deg);
+  }
   &:hover {
     background-color: $color-primario-dark;
     color: $color-blanco;

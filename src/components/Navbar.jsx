@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import scrollToContact from "./ScrollToContact"
 import ContactMeLogo from "../img/navbar/contactMeLogo.svg";
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="d-flex align-items-center nav-link text-light contact-me py-2 px-4"
-                  href="#contactMe">
+                  href="/" onClick={scrollToContact}>
                   Contact me
                   <span className="ms-2">
                     <img src={ContactMeLogo} alt="" />

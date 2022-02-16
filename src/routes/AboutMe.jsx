@@ -49,7 +49,7 @@ const AboutMe = () => {
                 <img src={Flecha} alt="" className="ms-2 flechita" />
               </ButtonLink>
               <ButtonLink
-                className="button-download button-animate my-4"
+                className="button-download my-4"
                 content="Download CV"
                 href={CvAgus}>
                 <img src={Flecha} alt="" className="ms-2 flechita" />
