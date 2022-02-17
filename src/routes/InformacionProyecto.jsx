@@ -44,7 +44,7 @@ const InformacionProyecto = () => {
           <div className="row">
             <div className="col-lg-6 d-flex align-items-center justify-content-center">
               <div>
-                <h1 className="text-light text-center title-proyect">
+                <h1 className="text-light title-proyect">
                   {selectedProyect.title}
                 </h1>
                 <div className="d-flex">

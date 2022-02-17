@@ -117,12 +117,19 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/agustin-ietta/"
                   alt=""
+                  target="_blank"
+                  rel="noreferrer"
                   className="position-relative">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href={CvAgus} alt="" className="position-relative">
+                <a
+                  href={CvAgus}
+                  alt="Download CV"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="position-relative">
                   Download CV
                 </a>
               </li>
@@ -130,6 +137,8 @@ const Footer = () => {
                 <a
                   href="https://agustinietta.medium.com"
                   alt=""
+                  target="_blank"
+                  rel="noreferrer"
                   className="position-relative">
                   Medium
                 </a>
@@ -138,6 +147,8 @@ const Footer = () => {
                 <a
                   href="https://dribbble.com/geniusaturn"
                   alt=""
+                  target="_blank"
+                  rel="noreferrer"
                   className="position-relative">
                   Dribble
                 </a>
@@ -150,6 +161,8 @@ const Footer = () => {
               <span>
                 <a
                   href="https://portfolio-zeta-topaz-63.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-muted developed">
                   Damian Laterza
                 </a>
