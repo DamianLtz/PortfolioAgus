@@ -1,4 +1,3 @@
-import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -57,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default memo(Header);
+export default Header;
