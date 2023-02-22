@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Container } from "react-bootstrap";
 import ButtonEmail from "./footer/ButtonEmail";
 import SocialMedia from "./footer/SocialMedia";
@@ -23,4 +24,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);
