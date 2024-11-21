@@ -6,7 +6,7 @@ const AuthorFront = () => {
           Designed by me & developed by{" "}
           <span>
             <a
-              href="https://portfolio-zeta-topaz-63.vercel.app/"
+              href="https://portfolio-damian-laterza.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="text-dev developed pt-2">
